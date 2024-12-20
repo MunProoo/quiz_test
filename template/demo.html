@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>밈 능력고사</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="exam-container">
+    <!-- 시험지 헤더 -->
+    <header class="exam-header">
+      <h1>밈 능력고사</h1>
+      <p>제1교시 | 총 30문항 | 시간: 50분</p>
+    </header>
+
+    <!-- 시험 영역 -->
+    <section class="question" id="quiz-section">
+      <div class="question-item" id="q1">
+        <p class="question-number">1.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q1', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q1', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q1', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q1', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <!-- <div class="question-item" id="q2">
+        <p class="question-number">2.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q2', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q2', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q2', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q2', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q3">
+        <p class="question-number">3.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q3', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q3', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q3', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q3', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q4">
+        <p class="question-number">4.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q4', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q4', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q4', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q4', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q5">
+        <p class="question-number">5.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q5', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q5', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q5', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q5', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q6">
+        <p class="question-number">6.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q6', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q6', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q6', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q6', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q7">
+        <p class="question-number">7.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q7', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q7', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q7', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q7', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q8">
+        <p class="question-number">8.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q8', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q8', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q8', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q8', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div>
+
+      <div class="question-item" id="q9">
+        <p class="question-number">9.</p>
+        <p class="question-text">다음 밈의 의미로 가장 적절한 것을 고르시오. (3점)</p>
+        <div class="question-image">
+          <img src="다운로드.gif" alt="밈 이미지">
+        </div>
+        <div class="options">
+          <div class="option" onclick="selectOption('q9', 1)">① 선택지 첫 번째</div>
+          <div class="option" onclick="selectOption('q9', 2)">② 선택지 두 번째</div>
+          <div class="option" onclick="selectOption('q9', 3)">③ 선택지 세 번째</div>
+          <div class="option" onclick="selectOption('q9', 4)">④ 선택지 네 번째</div>
+        </div>
+      </div> -->
+
+      <div class="question-item" id="question_ex">
+        <p class="question-number">2.</p>
+        <p class="question-text">아래 문장을 보고 밈의 기원을 설명하시오. (서술형, 5점)</p>
+        <div class="question-paragraph">
+          <p>“밈(meme)은 리처드 도킨스가 1976년에 제시한 개념으로...”</p>
+        </div>
+        <input type="text" id="q_ex" placeholder="여기에 답안을 작성하세요." class="input-box">
+        <!-- <textarea name="q2" rows="4" cols="50" placeholder="여기에 답안을 작성하세요."></textarea> -->
+      </div>
+    </section>
+
+    <!-- 제출 버튼 -->
+    <div class="submit-area">
+      <button onclick="submitExam()" class="submit-button">제출하기</button>
+    </div>
+
+    
+    <!-- 결과 영역 -->
+    <div id="result-section" class="hidden">
+      <h2>🎉 시험 결과 🎉</h2>
+      <p id="result" class="result"></p>
+    </div>
+
+    <!-- 하단 -->
+    <footer class="exam-footer">
+      <p>끝까지 잘 풀어보세요! | © 2024 밈능력고사</p>
+    </footer>
+  </div>
+</body>
+<script src="demo.js"></script>
+</html>

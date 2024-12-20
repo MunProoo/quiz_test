@@ -1,0 +1,128 @@
+/* 기본 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "맑은 고딕", "굴림", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.exam-container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 */
+.exam-header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.exam-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.exam-header p {
+  font-size: 14px;
+}
+
+/* 문제 스타일 */
+.question-item {
+  margin-bottom: 20px;
+}
+
+.question-number {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.question-text {
+  font-size: 16px;
+}
+
+.question-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+/* 선택지 */
+.options {
+  margin-top: 10px;
+}
+
+.option {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.option:hover {
+  background-color: #f9f9f9;
+}
+
+.option.selected {
+  background-color: #d1e7dd;
+  border-color: #0f5132;
+  font-weight: bold;
+}
+
+/* 결과 영역 */
+.result-area {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eef;
+  border: 1px solid #ccf;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+/* 제출 버튼 */
+.submit-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* padding 포함해서 width 조정 */
+}
+
+.input-box:focus {
+  border-color: #333;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
