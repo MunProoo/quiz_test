@@ -1,0 +1,219 @@
+/* 기본 스타일은 동일하게 유지 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.exam-paper {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* 타이틀 스타일 수정 */
+.exam-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 서브타이틀 스타일 개선 */
+.exam-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px auto;
+    width: fit-content;
+    padding: 8px 25px;
+    border: 2px solid #2196f3;
+    border-radius: 5px;
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+/* 학생 정보 영역 스타일 개선 */
+.student-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.info-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.info-field label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+}
+
+.info-field input {
+    border: none;
+    border-bottom: 2px solid #2196f3;
+    padding: 8px;
+    width: 180px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.info-field input:focus {
+    outline: none;
+    border-bottom-color: #1976d2;
+}
+
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question-text {
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 20px;
+}
+
+.option {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.option.selected {
+    background-color: #e3f2fd;
+}
+
+/* 숫자와 체크마크를 포함하는 컨테이너 */
+.number-container {
+    position: relative;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-number {
+    font-size: 14px;
+    z-index: 1;
+}
+
+/* 체크마크 스타일 수정 */
+.checkmark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 2;
+}
+
+/* 체크 표시 크기 증가 */
+.checkmark::before {
+    content: '';
+    position: absolute;
+    width: 4px;          /* 2px에서 증가 */
+    height: 16px;        /* 8px에서 증가 */
+    background-color: #2196f3;
+    transform: rotate(45deg);
+    top: 4px;
+    left: 10px;         /* 위치 조정 */
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 4px;          /* 2px에서 증가 */
+    height: 22px;        /* 12px에서 증가 */
+    background-color: #2196f3;
+    transform: rotate(-45deg);
+    top: 0px;
+    left: 6px;          /* 위치 조정 */
+}
+
+.selected .checkmark {
+    opacity: 1;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 결과 스타일 개선 */
+.results {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+}
+
+.results h2 {
+    color: #1976d2;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* 문제 스타일 */
+.question-item {
+    margin-bottom: 20px;
+}
+
+.question-number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.question-text {
+    font-size: 16px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* padding 포함해서 width 조정 */
+}
+
+.input-box:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
